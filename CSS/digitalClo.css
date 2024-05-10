@@ -1,0 +1,186 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(75deg,pink,purple);
+    /* background-image: url("../../DigitalClock/asset/imgs/img1.jpg"); */
+    /* background-position: 100%; */
+    background-repeat: no-repeat;
+    background-size: 100% 100vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: context-menu;
+}
+
+#containerClock{
+    width: 70vw;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.438);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: 10px;
+    box-shadow: 5px 5px 5px black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+#hrContainer{
+    width: 100%;
+    height: 8vw;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+    color: white;
+}
+
+#hours12{
+    position: absolute;
+}
+
+#hours24{
+    position: absolute;
+    display: none;
+}
+
+#date{
+    font-size: 4vw;
+    color: royalblue;
+}
+
+#day{
+    font-size: 3vw;
+    color: royalblue;
+}
+
+h1{
+    letter-spacing: 2vw;
+    text-shadow: 2px 2px 2px black;
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal
+}
+
+#sec{
+    position: absolute;
+    z-index: -1;
+    font-size: 40vw;
+    color: white;
+    top: .2vw;
+}
+
+#toggle{
+    width: 6vw;
+    height: 3vw;
+    background-color: white;
+    position: fixed;
+    left: 1vw;
+    top: 1vw;
+    border-radius: 100px;
+    box-shadow: 5px 5px 5px black;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+#button{
+    width: 50%;
+    height: 100%;
+    border-radius: 100%;
+    outline: none;
+    border: none;
+    background-color: blue;
+    position: absolute;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+#icon{
+    position: fixed;
+    top: 2.5vw;
+    right: 2vw;
+    font-size: 3vw;
+    color: white;
+    text-shadow: 2px 2px 2px  black;
+    cursor: pointer;
+}
+
+#alarmContainer{
+    width: 60vw;
+    height: 25vw;
+    position: absolute;
+    background-color: rgba(10, 10, 91, 0.842);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#close{
+    color: white;
+    font-size: 3vw;
+    position: absolute;
+    top:.3vw;
+    right: 1vw;
+    transform: rotate(45deg);
+    cursor: pointer;
+    text-shadow: 5px 5px 5px black;
+}
+
+
+.inp{
+   width: 40%;
+   height: 3vw;
+   border: none;
+   outline: none;
+   background-color: transparent;
+   color: white;
+   font-size: 2vw;
+   border-bottom: 2px solid black;
+   text-shadow: 1px 3px 5px black;
+}
+
+#date{
+    font-size: 35px;
+}
+
+#stopAlarm{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#alarmBut{
+    width: 10vw;
+    height: 2vw;
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px white ;
+    text-align: center;
+}
+
+#alarmBut:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 3px 3px 2px black ;
+    text-shadow: 1px 1px 1px black;
+}
